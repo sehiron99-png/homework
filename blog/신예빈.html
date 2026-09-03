@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신예빈.html</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- 01. 상단 카테고리 창 -->
+  <div class="top-links">
+    <a href="#">이웃블로그</a>
+    <a href="#">블로그홈</a>
+    <a href="#">내 메뉴</a>
+    <a href="#">내 정보</a>
+    <a href="../../03/08/신예빈_회원가입양식.html">회원 가입</a>
+  </div>
+  <!-- 02. 블로그 제목 -->
+  <div class="container">
+    <a href="신예빈.html" class="banner-link">
+      <div class="banner">
+        <h1>신예빈님의 블로그</h1>
+      </div>
+    </a>
+  </div>
+
+<ul>
+
+  <!-- 01. 카테고리 창 -->
+  <li class="dropdown">
+    <a href="#prolog">프롤로그</a>
+    <div class="dropdown-content">
+      <a href="#">공지</a>
+      <a href="#">블로그 소개</a>
+      <a href="#">블로그 히스토리</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#blog">블로그</a>
+    <div class="dropdown-content">
+      <div class="dropdown nested">
+        <a href="#games">먹방</a>
+        <div class="dropdown-content">
+          <a href="#">후기</a>
+          <a href="#">일상</a>
+        </div>
+      </div>
+
+      <div class="dropdown nested">
+        <a href="#games">게임</a>
+        <div class="dropdown-content">
+          <a href="#">pc</a>
+          <a href="#">스팀</a>
+          <a href="#">모바일</a>
+        </div>
+      </div>
+
+      <div class="dropdown nested">
+        <a href="#fun">덕질</a>
+        <div class="dropdown-content">
+          <a href="#">설정</a>
+          <a href="#">백업</a>
+          <a href="#">그림</a>
+          <a href="#">영상</a>
+          <a href="#">잡</a>
+        </div>
+      </div>
+
+      <div class="dropdown nested">
+        <a href="뻘글.html">뻘글</a>
+        <div class="dropdown-content">
+          <a href="뻘글.html">중요</a>
+        </div>
+      </div>
+
+      <div class="dropdown nested">
+        <a href="#give">♥</a>
+      </div>
+
+      <div class="dropdown nested">
+        <a href="#paper">공유</a>
+      </div>
+
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#test" class="dropbtn">이력서</a>
+    <div class="dropdown-content">
+      <a href="../../03/07/신예빈.html">자기소개서</a>
+      <a href="#">자격증</a>
+      <a href="#">경력여부</a>
+      <a href="#">포트폴리오</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#story" class="dropbtn">안부글</a>
+    <div class="dropdown-content">
+      <a href="#">2026년</a>
+      <a href="#">2025년</a>
+      <a href="#">2024년</a>
+      <a href="#">2023년</a>
+      <a href="#">2022년</a>
+      <a href="#">2021년</a>
+    </div>
+  </li>
+  
+</ul>
+
+<!-- 레이아웃 창 -->
+<div class="layout">
+  <aside class="category-box">
+
+    <!-- 01. 프로필 창 -->
+    <div class="profile-box">
+      <img src="./profile.png" alt="프로필 이미지" class="profile-img">
+      <h5 class="profile-name">신예빈</h5>
+      <p class="profile-desc">안녕하세요
+      신예빈의 블로그입니다 ♥</p>
+    </div>
+
+    <a href="https://www.google.com" target="_blank" class="google-link">
+      <img src="google.png" alt="구글 바로가기">
+      <span>구글 바로가기</span>
+    </a>
+
+    <!-- 02. 사이드 카테고리 창 -->
+    <h4>카테고리</h4>
+    <ul class="cat-list">
+      
+      <li>
+        <input type="checkbox" id="menu-prolog" class="menu-toggle" checked>
+        <label for="menu-prolog">프롤로그 ♥</label>
+        <ul class="sub-cat-list">
+          <li><a href="#">공지</a></li>
+          <li><a href="#">블로그 소개</a></li>
+          <li><a href="#">블로그 히스토리</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="menu-blog" class="menu-toggle" checked>
+        <label for="menu-blog">블로그 ♥</label>
+        <ul class="sub-cat-list">
+          
+          <li>
+            <input type="checkbox" id="menu-mukbang" class="menu-toggle" checked>
+            <label for="menu-mukbang">먹방</label>
+            <ul class="sub-sub-cat-list">
+              <li><a href="#review">후기</a></li>
+              <li><a href="#">일상</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <input type="checkbox" id="menu-games" class="menu-toggle" checked>
+            <label for="menu-games">게임</label>
+            <ul class="sub-sub-cat-list">
+              <li><a href="#pc">PC</a></li>
+              <li><a href="#">스팀</a></li>
+              <li><a href="#">모바일</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <input type="checkbox" id="menu-fun" class="menu-toggle" checked>
+            <label for="menu-fun">뻘글 ♥</label>
+            <ul class="sub-sub-cat-list">
+              <li><a href="#">중요</a></li>
+            </ul>
+          </li>
+
+          <li><a href="give">♥</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="menu-resume" class="menu-toggle" checked>
+        <label for="menu-resume">이력서 ♥</label>
+        <ul class="sub-cat-list">
+          <li><a href="../../03/07/신예빈.html">자기소개서</a></li>
+          <li><a href="#">자격증</a></li>
+          <li><a href="#">경력여부</a></li>
+          <li><a href="#">포트폴리오</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="menu-story" class="menu-toggle" checked>
+        <label for="menu-story">안부글 ♥</label>
+        <ul class="sub-cat-list">
+          <li><a href="#">2026년</a></li>
+          <li><a href="#">2025년</a></li>
+          <li><a href="#">2024년</a></li>
+          <li><a href="#">2023년</a></li>
+          <li><a href="#">2022년</a></li>
+          <li><a href="#">2021년</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <div class="search-box">
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="검색어를 입력하세요" aria-label="블로그 검색">
+        <button type="submit">검색</button>
+      </form>
+    </div>
+  </aside>
+  
+  <!-- 03. 본문 글 창 -->
+  <main class="content">
+    <article class="post">
+      <p class="post-meta"><a href="뻘글.html" style="text-decoration: none; color: inherit;">블로그 &gt; 뻘글</a></p>
+      <h1 class="post-title">열심히 글 쓰는데 조회수 안 나오는 이유ㅣ예전엔 잘 됐는데, 요즘 갑자기 블로그가 안 보이는 공통</h1>
+      <p class="post-meta2">작성일: 2026-06-15</p>
+      <p class="post-body">※ 본 글은 협찬·광고 없는 순수 정보성 글입니다. 
+      분명 더 열심히 쓰는데, 왜 예전 같지 않을까? 
+      <img src="./image1" alt="블로그 이미지">
+      예전에는 글 하나만 올려도 검색 유입이 꾸준히 들어왔던 기억, 다들 있으실 겁니다. 
+      그런데 요즘은 글은 더 길어졌고 사진도 더 많이 넣었고 
+      예전보다 훨씬 신경 써서 쓰는데 
+      조회수는 오히려 줄어든 느낌이 들죠. 
+      이럴 때 대부분 이렇게 생각합니다. 
+
+      “내가 감을 잃었나?”
+
+      하지만 실제로는 블로그를 평가하는 기준 자체가 달라진 경우가 훨씬 많습니다.
+      예전 블로그랑 요즘 블로그, 뭐가 달라졌을까 
+      가장 큰 차이는 “정보 중심 → 기록 중심”으로 옮겨갔다는 점입니다. 
+      
+      정보는 많은데, 끝까지 안 읽히는 글
+
+      요즘 노출이 안 되는 글을 보면 구조적으로 비슷한 패턴이 반복됩니다.
+      글 자체의 정보량이 문제가 아니라 “끝까지 읽히는 구조인가”가 더 중요해진 상황입니다.
+
+      정리는 잘했는데, 직접 해본 느낌이 없는 글
+
+      정보형 글에서 특히 많이 나타나는 문제입니다.
+      “정답을 알려주는 글”보다  “왜 이걸 하게 됐는지부터 설명하는 글”이 더 오래 읽힙니다.
+
+
+      요즘 다시 보이기 시작하는 블로그의 공통점
+
+      최근 들어 조회수가 다시 회복되는 블로그들을 보면 의외로 공통점은 아주 단순합니다.
+      사람이 직접 겪은 기록처럼 보이는 글
+      글이 얼마나 잘 정리돼 있는지, 정보가 얼마나 많이 들어 있는지보다 “이 사람이 실제로 겪고 쓴 글인가?”가 더 중요하게 작용하는 흐름입니다.
+
+      예를 들어 같은 정보라도
+      왜 이 주제를 찾게 됐는지
+      직접 해보면서 막혔던 부분은 무엇이었는지
+      생각보다 불편했던 점이나 아쉬운 점은 무엇이었는지
+
+      이런 맥락이 함께 담긴 글은 자연스럽게 읽는 흐름이 길어지고, 결과적으로 다시 검색 화면에서 보이기 시작하는 경우가 많습니다.
+
+      이러한 변화는 네이버 블로그 운영 가이드와 최근 운영자들 사이에서 공통적으로 체감되는 방향과도 맞닿아 있습니다.
+
+      </p>
+    </article>
+  </main>
+  
+
+
+</div>
+
+</body>
+</html>
