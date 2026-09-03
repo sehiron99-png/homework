@@ -1,0 +1,474 @@
+body {
+  background-color: #fff4fd;
+  /* 화면 비율 */
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+.container {
+  /* 제목 최대 넓이 */
+    max-width: 500px;
+  /* 제목 좌우 여백 */
+  margin: 0 auto;
+  text-align: center;
+  /* 제목 색 */
+  color: #7e2934;
+}
+
+/* 제목 */
+.banner-link {
+  display: block;
+  text-decoration: none; /* none(밑줄제거) underline(밑줄) overline(윗줄) line-through(취소선) */
+  color: inherit;
+}
+.banner {
+  cursor: pointer;
+}
+.banner h1 {
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+/* 맨 위 카테고리 */
+.top-links {
+  text-align: right;
+  padding: 8px 20px 8px 50px;
+  font-size: 14px;
+}
+
+/* 맨 위 카테고리 */
+.top-links a {
+  color: rgb(168, 52, 98);
+  /* 링크 밑줄 제거 */
+  text-decoration: none;
+  /* 글자 간격 */
+  margin-left: 20px;
+}
+
+/* 맨 위 카테고리 */
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+ul {
+  /* 리스트(li) 점 없애기 */
+  list-style-type: none;
+  /* 맨 위 간격 */
+  margin: 0;
+  /* 맨 왼쪽 간격 */
+  padding: 0;
+  /* hidden : 자식이 부모를 벗어날때 숨김 */
+  overflow: hidden;  /* visible, scroll, auto */
+  /* 배경 색 지정 */
+  background-color: #ffffff;
+  /* 테두리 */
+  border: 1px solid rgb(216, 192, 199);
+  /* 모서리 라운드 */
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+li {
+  /* 옆으로 쓰기 */
+  float: left;
+}
+
+li a, .dropbtn {
+  /* 블럭 형식 */
+  display: block;
+  /* 글자 색 바꾸기 */
+  color: rgb(121, 60, 69);
+  /* 글자 정렬 */
+  text-align: center;
+  /* 칸 넓이 조절 */
+  padding: 14px 16px;
+  /* 밑줄 없애기 */
+  text-decoration: none;  
+}
+/* 상위 항목 배경색 */
+li a:hover {
+  background-color: #ddabbade;
+}
+/* 드롭다운 항목 배경색 */
+.dropdown-content a:hover {
+  background-color: #e3abbe;
+}
+/* 카테고리 박스 */
+li.dropdown {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* 하위 목록 박스 디자인 */
+.dropdown-content {
+  /* none : 숨기기 */
+  display: none;  /* block(주어진공간사용), inline(내용만큼만), inline-block(길이정한 내용), none(숨기기) */
+  position: absolute;
+  /* 박스 색깔 */
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 5px 5px 5px rgba(183, 159, 159, 0.2);
+  z-index: 1;
+}
+/* 하위 목록 글자 디자인 */
+.dropdown-content a {
+  color: rgb(165, 74, 89);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* 하위 목록 보여주기 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+/* 2번째 하위 카테고리 */
+.dropdown-content .dropdown {
+  /* 내부에 절대 위치 포함 */  
+  position: relative; 
+}
+.dropdown-content .dropdown .dropdown-content {
+  top: 0;
+  /* 칸 위치 */
+  left: 100%;
+  /* 칸 간격 띄우기 */
+  margin-left: 3px;
+  /* 미클릭시 숨김 */
+  display: none; 
+  /* 절대위치 */
+  position: absolute;
+  z-index: 2;
+}
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+/* 레이아웃 */
+.layout {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 10px;
+}
+
+
+
+
+
+/* 사이드 카테고리 박스 */
+.category-box {
+  flex: 2;
+  min-width: 180px;
+  max-width: 220px;
+  background: #ffffff;
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  /* 테두리 */
+  border: 1px solid rgb(216, 192, 199);
+}
+
+/* 사이드 카테고리 박스 */
+.category-box h4 { 
+  font-size: 18px; 
+  color: #433535; 
+  margin-bottom: 30px; 
+}
+
+.category-box a:hover { 
+  background: #fff5f8; 
+  color: #e63946; 
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* 체크박스 숨기기 */
+.menu-toggle {
+  display: none;
+}
+
+/* 상위 카테고리 */
+.cat-list { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  text-align: left; 
+}
+
+/* 구분선 추가 */
+.cat-list > li { 
+  float: none !important; 
+  text-align: left; 
+  /* 구분선 solid(실선) */
+  border-bottom: 1px dashed rgb(173, 142, 152); 
+  margin-bottom: 15px; 
+  padding-bottom: 15px; 
+}
+
+/* 마지막 구분선 제거 */
+.cat-list > li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+/* 카테고리 디자인 */
+.cat-list label,
+.sub-cat-list label,
+.cat-list a,
+.sub-cat-list a,
+.sub-sub-cat-list a {
+  display: block;
+  color: #8b6b72;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.cat-list label:hover,
+.sub-cat-list label:hover,
+.cat-list a:hover,
+.sub-cat-list a:hover,
+.sub-sub-cat-list a:hover {
+  background: #ffffff;
+  color: #c66a83;
+  font-weight: bold;
+}
+
+
+/* 세로로 나타내기 */
+.sub-cat-list li,
+.sub-sub-cat-list li {
+  float: none !important;
+  text-align: left;
+  margin-bottom: 8px;
+  position: relative;
+}
+.sub-cat-list a,
+.sub-sub-cat-list a {
+  float: none;
+  display: block;
+}
+
+
+
+/* 하위/이중 하위 메뉴 기본 숨김 */
+.cat-list .menu-toggle ~ .sub-cat-list,
+.sub-cat-list .menu-toggle ~ .sub-sub-cat-list {
+  display: none;
+}
+
+/* 하위 메뉴 표시 */
+.cat-list .menu-toggle:checked ~ .sub-cat-list,
+.sub-cat-list .menu-toggle:checked ~ .sub-sub-cat-list {
+  display: block;
+}
+
+/* 여백 및 들여쓰기 */
+.sub-cat-list, .sub-sub-cat-list {
+  list-style: none; 
+  margin: 4px 0 0 10px; 
+  padding: 0;
+  border: none;
+}
+
+/* 열림 상태 (- 아이콘) */
+.cat-list label::after,
+.sub-cat-list label::after {
+  content: " -";
+  font-size: 1.2em;
+  float: right;
+  font-weight: bold;
+}
+
+/* 닫힘 상태 (+ 아이콘) */
+.menu-toggle:not(:checked) ~ label::after {
+  content: " +";
+}
+
+
+
+
+
+/* 본문 */
+.content {
+  background: #ffffff;
+  max-width: 820px;
+  margin: 18px auto;
+  padding: 20px 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  /* 테두리 */
+  border: 1px solid rgb(216, 192, 199);
+}
+.post-title {
+  margin: 20px 0 20px 0;
+  color: #7e2934;
+  font-size: 28px; 
+  font-weight: bold;
+}
+.post-meta {
+  margin: 0 0 14px 0;
+  color: #8b6b72;
+  font-size: 16px;
+}
+.post-meta2 {
+  margin: 0 0 50px 0;
+  color: #8b6b72;
+  font-size: 15px;
+}
+/* 글 자동 줄바꿈 */
+.post-body {
+  line-height: 1.6;
+  color: #333;
+  /* 엔터 줄바꿈을 자동으로 인식하게 해주는 속성 */
+  white-space: pre-line;
+}
+/* 본문 안의 이미지 줄바꿈 처리후 가운데 정렬 */
+.post-body img {
+  display: block;
+  margin: 20px auto; /* 위아래 20px 여백, 좌우 가운데 정렬 */
+  max-width: 100%; /* 본문 크기를 넘지 않게 조절 */
+  height: auto; /* 이미지 비율 유지 */
+}
+
+
+/* 프로필 박스 */
+.profile-box {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgb(173, 142, 152);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  /* cover(이미지 크롭) contain(이미지 미크롭) */
+  object-fit: contain; 
+  margin-bottom: 10px;
+  border: 1px solid rgb(232, 186, 199);
+}
+
+/* 닉네임 */
+.profile-name {
+  font-size: 16px;
+  color: #7e2934;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+/* 프로필 소개글 */
+.profile-desc {
+  font-size: 14px;
+  color: #8b6b72;
+  margin: 0;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+
+
+
+/* 구글 창 */
+.google-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+  color: #8b6b72;
+  padding: 20px 0;
+}
+/* 배경 색 미변경 */
+.google-link:hover, 
+.google-link:active, 
+.google-link:focus {
+  background: transparent !important;
+}
+/* 이미지 크기 */
+.google-link img {
+  width: 70px;
+  height: 40px;
+  margin-right: 15px; /* 글자와의 간격 */
+}
+/* 글자 크기 */
+.google-link span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* 검색창 박스 전체 */
+.search-box {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+/* 입력창 */
+.search-box input[type="text"] {
+  width: 65%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+}
+
+/* 검색 버튼 */
+.search-box button {
+  width: 20%;
+  padding: 3px;
+  background-color: #8b6b72;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
+
+

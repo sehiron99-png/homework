@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 가입 양식</title>
+  <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>회원 가입</h2>
+    <form action="#">
+      <div class="form-group">
+        <label>아이디</label>
+        <div class="input-with-button">
+          <input type="text" name="userid" placeholder="아이디" required>
+          <button type="button" class="btn-check">중복확인</button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>비밀번호</label>
+        <input type="password" name="userpw" placeholder="최소 6~10자리, 영문/숫자" required>
+      </div>
+
+      <div class="form-group">
+        <label>비밀번호 확인</label>
+        <input type="password" name="userpw_confirm" placeholder="한 번 더 입력해주세요" required>
+      </div>
+
+      <div class="form-group">
+        <label>성별 / 국적</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male"> 남자</label>
+          <label><input type="radio" name="gender" value="female"> 여자</label>
+          <label><input type="radio" name="human" value="local"> 내국인</label>
+          <label><input type="radio" name="human" value="foreign"> 외국인</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>통신사</label>
+        <select name="carrier">
+          <option value="skt">SKT</option>
+          <option value="kt">KT</option>
+          <option value="lgu">LG U+</option>
+          <option value="skt-mvno">SKT 알뜰폰</option>
+          <option value="kt-mvno">KT 알뜰폰</option>
+          <option value="lgu-mvno">LG U+ 알뜰폰</option>
+        </select>
+      </div>
+
+      <div class="form-group phone-group">
+        <label>전화번호 인증</label>
+        <div class="input-with-button">
+          <input type="tel" name="phoneNumber" placeholder="010-1234-5678" required>
+          <button type="button" class="btn-check">인증번호 받기</button>
+        </div>
+        <input type="text" name="phoneVerify" placeholder="인증번호 입력" class="verify-input">
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">가입하기</button>
+        <button type="reset" class="btn-reset">취소</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
